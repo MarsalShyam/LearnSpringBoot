@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Variable-Expression In Action</title>
+</head>
+<body>
+<h1>Variable Expression Demo</h1>
+<h2>User Details: </h2>
+<div>
+    <p>Name:<Strong th:text="${User.name}"></Strong></p>
+    <p>Email:<Strong th:text="${User.email}"></Strong></p>
+    <p>Role:<Strong th:text="${User.role}"></Strong></p>
+    <p>Gender:<Strong th:text="${User.gender}"></Strong></p>
+</div>
+
+</body>
+</html>
