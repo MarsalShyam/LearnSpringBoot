@@ -6,9 +6,12 @@ import com.BankingRESTApi.BankingRESTApi.entity.Account;
 public class AccountMapper {
     public static Account mapToAccount(AccountDto accountDto){
         Account account=new Account(
-                accountDto.getId(),
-                accountDto.getAccountHolderName(),
-                accountDto.getBalance()
+//                accountDto.getId(),
+//                accountDto.getAccountHolderName(),
+//                accountDto.getBalance()
+                accountDto.id(),
+                accountDto.accountHolderName(),
+                accountDto.balance()
         );
         return account;
     }
